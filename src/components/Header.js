@@ -10,11 +10,13 @@ const Header = () => (
         <img src={avatar} alt="" />
       </a>
       <h1>
-        <strong>I am Strata</strong>, a super simple
+        Kaixo, <strong>Ander Frago Landa</strong> naiz 👨‍💻, 
         <br />
-        responsive site template freebie
+        <a href="http://cuatrovientos.org">Cuatrovientos</a> institutoko irakaslea.
         <br />
-        crafted by <a href="http://html5up.net">HTML5 UP</a>.
+        Orri honetan, lanbide heziketako zikloetan ematen ditudan edukien bilduma egiten dut.
+        <br />
+        Espero dut gustokoa izatea. ❤
       </h1>
     </div>
     <Footer />

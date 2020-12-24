@@ -5,8 +5,8 @@ import Gallery from '../components/Gallery'
 import Layout from '../components/layout'
 
 const HomeIndex = () => {
-  const siteTitle = 'Gatsby Starter - Strata'
-  const siteDescription = 'Site description'
+  const siteTitle = 'BLOGari - Ander F.L.'
+  const siteDescription = 'Lanbide heziketako ikasgaien dokumentazioa'
 
   return (
     <Layout>
@@ -18,49 +18,83 @@ const HomeIndex = () => {
       <div id="main">
         <section id="one">
           <header className="major">
-            <h2>
-              Ipsum lorem dolor aliquam ante commodo
-              <br />
-              magna sed accumsan arcu neque.
-            </h2>
+            <h2>Lanbide heziketako ikasgaien dokumentazioa.</h2>
           </header>
           <p>
-            Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc
-            nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae
-            lobortis tortor primis integer massa adipiscing id nisi accumsan
-            pellentesque commodo blandit enim arcu non at amet id arcu magna.
-            Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate
-            lorem neque cubilia.
+            Hauek dira zikloak:
+            <br />
+            Plataforma Anitzeko Aplikazioen Garapena eta Sistema Informatikoen
+            eta Sareen Administrazioa.
           </p>
-          <ul className="actions">
+          <ol>
             <li>
-              <a href="#" className="button">
-                Learn More
-              </a>
+              mailan
+              <ul>
+                <li>
+                  <a href="https://sites.google.com/cuatrovientos.org/entornos-de-desarrollo">
+                    Garapen inguruneak
+                  </a>
+                </li>
+                <li>
+                  <a href="https://drive.google.com/drive/folders/1HUj-tu_bUuMlVlhQaLg-opHXobuIPtdp?usp=sharing">
+                    Sistema informatikoa
+                  </a>
+                </li>
+              </ul>
             </li>
-          </ul>
+            <li>
+              mailan
+              <ul>
+                <li>
+                  <a href="https://sites.google.com/cuatrovientos.org/desarrollo-web">
+                    Web garapena
+                  </a>
+                </li>
+                <li>
+                  <a href="https://sites.google.com/cuatrovientos.org/desarrollo-interfaces">
+                    Interfazeen garapena
+                  </a>
+                </li>
+                <li>
+                  <a href="https://sites.google.com/cuatrovientos.org/prog-servicios-procesos">
+                    Prozezu eta zerbitzuen garapena
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ol>
+          <ol>
+            <li>
+              mailan
+              <ul>
+                <li>
+                  <a href="https://sites.google.com/cuatrovientos.org/implantacion-sistem-operativos">
+                    Sistema eragileen ezartzea
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              mailan
+              <ul>
+                <li>Sareen eta interneten sistemak</li>
+              </ul>
+            </li>
+          </ol>
+
         </section>
 
         <section id="two">
-          <h2>Recent Work</h2>
+          <h2>Proiektuak</h2>
 
           <Gallery />
 
-          <ul className="actions">
-            <li>
-              <a href="#" className="button">
-                Full Portfolio
-              </a>
-            </li>
-          </ul>
         </section>
 
         <section id="three">
-          <h2>Get In Touch</h2>
+          <h2>Idatzidazu helbide honetara!</h2>
           <p>
-            Accumsan pellentesque commodo blandit enim arcu non at amet id arcu
-            magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem
-            vulputate lorem neque lorem ipsum dolor.
+            Iradokizunak ongi etorriak dira.
           </p>
           <div className="row">
             <div className="8u 12u$(small)">
@@ -71,7 +105,7 @@ const HomeIndex = () => {
                       type="text"
                       name="name"
                       id="name"
-                      placeholder="Name"
+                      placeholder="Izena"
                     />
                   </div>
                   <div className="6u 12u$(xsmall)">
@@ -79,21 +113,21 @@ const HomeIndex = () => {
                       type="email"
                       name="email"
                       id="email"
-                      placeholder="Email"
+                      placeholder="Emaila"
                     />
                   </div>
                   <div className="12u">
                     <textarea
                       name="message"
                       id="message"
-                      placeholder="Message"
+                      placeholder="Mezua"
                       rows="4"
                     ></textarea>
                   </div>
                 </div>
                 <ul className="actions" style={{ marginTop: 30 }}>
                   <li>
-                    <input type="submit" value="Send Message" />
+                    <input type="submit" value="Bidali" />
                   </li>
                 </ul>
               </form>
@@ -102,25 +136,25 @@ const HomeIndex = () => {
               <ul className="labeled-icons">
                 <li>
                   <h3 className="icon fa-home">
-                    <span className="label">Address</span>
+                    <span className="label">Helbidea</span>
                   </h3>
-                  1234 Somewhere Rd.
+                  Av. de San Jorge Etorbidea 2,
                   <br />
-                  Nashville, TN 00000
+                  31012 Pamplona/Iruña
                   <br />
-                  United States
+                  Navarra/Nafarroa
                 </li>
                 <li>
                   <h3 className="icon fa-mobile">
-                    <span className="label">Phone</span>
+                    <span className="label">Tlf.:</span>
                   </h3>
-                  000-000-0000
+                  948 12 41 29
                 </li>
                 <li>
                   <h3 className="icon fa-envelope-o">
                     <span className="label">Email</span>
                   </h3>
-                  <a href="#">hello@untitled.tld</a>
+                  <a href="#">nau_frago@cuatrovientos.org</a>
                 </li>
               </ul>
             </div>

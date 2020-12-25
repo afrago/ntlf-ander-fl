@@ -10,7 +10,6 @@ const Gallery = ({ images = PROJECTS_INFO }) => {
         <div className="row">
           {images.map((obj, i) => {
             return (
-              <div className="row">
                 <ProjectItem
                   id={obj.id}
                   thumbnail={obj.thumbnail}
@@ -20,7 +19,6 @@ const Gallery = ({ images = PROJECTS_INFO }) => {
                   source={obj.source}
                   documentation={obj.documentation}
                 />
-              </div>
             )
           })}
         </div>

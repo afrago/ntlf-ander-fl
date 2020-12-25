@@ -43,17 +43,21 @@ const ProjectItem = ({
 }) => {
   return (
     <article key={id} className="work-item">
-      <h1 className="12u 12u$(small)">{title}</h1>
-      <div className="5u 12u$(small)">
-        {thumbnail ? showImage(thumbnail) : null}
-        <ul className="actions">
-          {documentation ? showDocumentation(documentation) : null}
-          {source ? showSource(source) : null}
-          {application ? showApplication(application) : null}
-        </ul>
+      <div className="row">
+        <h1 className="12u">{title}</h1>
       </div>
-      <div className="7u 12u$(small)">
-        <div dangerouslySetInnerHTML={{ __html: description }} />
+      <div className="row">
+        <div className="5u 12u$(small)">
+          {thumbnail ? showImage(thumbnail) : null}
+          <ul className="actions">
+            {documentation ? showDocumentation(documentation) : null}
+            {source ? showSource(source) : null}
+            {application ? showApplication(application) : null}
+          </ul>
+        </div>
+        <div className="7u  12u$(small)">
+          <div dangerouslySetInnerHTML={{ __html: description }} />
+        </div>
       </div>
     </article>
   )
@@ -62,7 +66,7 @@ const ProjectItem = ({
 ProjectItem.displayName = 'Proiektua'
 ProjectItem.propTypes = {
   id: PropTypes.string.isRequired,
-  thumbnail: PropTypes.string.isRequired,
+ // thumbnail: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   application: PropTypes.string.isRequired,

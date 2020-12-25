@@ -42,7 +42,7 @@ const ProjectItem = ({
   documentation,
 }) => {
   return (
-    <article key={id} className="row work-item">
+    <article key={id} className="work-item">
       <h1 className="12u 12u$(small)">{title}</h1>
       <div className="5u 12u$(small)">
         {thumbnail ? showImage(thumbnail) : null}

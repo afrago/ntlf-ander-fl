@@ -26,6 +26,7 @@ const HomeIndex = () => {
             Plataforma Anitzeko Aplikazioen Garapena eta Sistema Informatikoen
             eta Sareen Administrazioa.
           </p>
+          <h3>Plataforma Anitzeko Aplikazioen Garapena</h3>
           <ol>
             <li>
               mailan
@@ -63,6 +64,7 @@ const HomeIndex = () => {
               </ul>
             </li>
           </ol>
+          <h3>Sistema Informatikoen eta Sareen Administrazioa</h3>
           <ol>
             <li>
               mailan

@@ -43,8 +43,8 @@ const ProjectItem = ({
 }) => {
   return (
     <article key={id} className="row work-item">
-      <h1 className="12u 12u$(xsmall)">{title}</h1>
-      <div className="5u 12u$(xsmall)">
+      <h1 className="12u 12u$(small)">{title}</h1>
+      <div className="5u 12u$(small)">
         {thumbnail ? showImage(thumbnail) : null}
         <ul className="actions">
           {documentation ? showDocumentation(documentation) : null}
@@ -52,7 +52,7 @@ const ProjectItem = ({
           {application ? showApplication(application) : null}
         </ul>
       </div>
-      <div className="7u 12u$(xsmall)">
+      <div className="7u 12u$(small)">
         <div dangerouslySetInnerHTML={{ __html: description }} />
       </div>
     </article>

@@ -1,0 +1,22 @@
+
+/* Colors */
+$bg: #505994;
+$fg: #8098BA;
+$accent1: #BCC6D4;
+$accent2: lighten($accent1, 10%);
+$text-color: #888469;
+$title-color: darken($text-color, 30%);
+$section__link--hover: #77D4B2;
+$header__link--hover: #77D4B2;
+$link-color: darken(#77D4B2,20%);
+
+/* Fonts */
+$font-family:  'Open Sans', sans-serif;
+$font-size: 1.2rem;
+
+/* Layout*/
+$padding: 2rem;
+
+/* Sizes */
+$size-header-width: 35%;
+$size-header-pad: 4em;

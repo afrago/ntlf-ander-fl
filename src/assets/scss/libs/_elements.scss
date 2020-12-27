@@ -1,0 +1,56 @@
+/* Header */
+
+#header {
+
+    /* image */
+    background-attachment:	scroll,								fixed;
+    background-image:		url('images/overlay.png'),			url('../images/bg.jpg');
+    background-position:	top left,							top left;
+    background-repeat:		repeat,								no-repeat;
+    background-size:		auto,								cover;
+    .image.avatar {
+        @extend .d-flex;
+        @extend .justify-content-end;
+        img {
+            @extend .rounded-circle;            
+        }
+    }
+    /* responsive layout */
+    padding: ($size-header-pad * 2) $size-header-pad;
+    @include media-breakpoint-up(lg) { 
+        position: fixed;
+        height: 100%;
+     }
+
+    /* fonts */
+    font-family: $font-family;
+    text-align: right;
+    strong, b {
+        color: $accent1;
+    }
+    h1 {
+        color: $accent2;
+        font-size: 1.75em;
+        line-height: 1.75em;
+        margin: 0;
+    }
+    a {
+       text-decoration: none;
+       @include linkcolor;
+    }
+}
+
+
+/* Footer */
+
+#footer {
+    @extend .ml-auto;
+    .icons {
+        list-style: none;
+        li {
+            @extend .list-inline-item;
+            @extend .ml-auto;
+        }       
+    }
+    
+}

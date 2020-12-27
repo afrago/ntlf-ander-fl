@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import Gallery from '../components/Gallery'
+import Projects from '../components/Projects'
 import Layout from '../components/layout'
 
 const HomeIndex = () => {
@@ -27,9 +27,9 @@ const HomeIndex = () => {
             eta Sareen Administrazioa.
           </p>
           <h3>Plataforma Anitzeko Aplikazioen Garapena</h3>
-          <ol>
+          <ul className="course">
             <li>
-              mailan
+              1. mailan
               <ul>
                 <li>
                   <a href="https://sites.google.com/cuatrovientos.org/entornos-de-desarrollo">
@@ -44,7 +44,7 @@ const HomeIndex = () => {
               </ul>
             </li>
             <li>
-              mailan
+              2. mailan
               <ul>
                 <li>
                   <a href="https://sites.google.com/cuatrovientos.org/desarrollo-web">
@@ -63,11 +63,11 @@ const HomeIndex = () => {
                 </li>
               </ul>
             </li>
-          </ol>
+          </ul>
           <h3>Sistema Informatikoen eta Sareen Administrazioa</h3>
-          <ol>
+          <ul className="course">
             <li>
-              mailan
+              1. mailan
               <ul>
                 <li>
                   <a href="https://sites.google.com/cuatrovientos.org/implantacion-sistem-operativos">
@@ -77,86 +77,54 @@ const HomeIndex = () => {
               </ul>
             </li>
             <li>
-              mailan
+              2. mailan
               <ul>
                 <li>Sareen eta interneten sistemak</li>
               </ul>
             </li>
-          </ol>
-
+          </ul>
         </section>
 
         <section id="two">
           <h2>Proiektuak</h2>
-
-          <Gallery />
-
+          <Projects />
         </section>
 
         <section id="three">
           <h2>Idatzidazu helbide honetara!</h2>
-          <p>
-            Iradokizunak ongi etorriak dira.
-          </p>
+          <p>Iradokizunak ongi etorriak dira.</p>
           <div className="row">
-            <div className="8u 12u$(small)">
-              <form method="post" action="#">
-                <div className="row uniform 50%">
-                  <div className="6u 12u$(xsmall)">
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Izena"
-                    />
-                  </div>
-                  <div className="6u 12u$(xsmall)">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="Emaila"
-                    />
-                  </div>
-                  <div className="12u">
-                    <textarea
-                      name="message"
-                      id="message"
-                      placeholder="Mezua"
-                      rows="4"
-                    ></textarea>
-                  </div>
-                </div>
-                <ul className="actions" style={{ marginTop: 30 }}>
-                  <li>
-                    <input type="submit" value="Bidali" />
-                  </li>
-                </ul>
-              </form>
-            </div>
-            <div className="4u 12u$(small)">
+            <div className="col-12 col-sm-12">
               <ul className="labeled-icons">
                 <li>
-                  <h3 className="icon fa-home">
-                    <span className="label">Helbidea</span>
-                  </h3>
-                  Av. de San Jorge Etorbidea 2,
-                  <br />
-                  31012 Pamplona/Iruña
-                  <br />
-                  Navarra/Nafarroa
+                  <div className="contact">
+                    <h3 className="icon fa fa-home fa-2x">
+                      <span className="label">Helbidea</span>
+                    </h3>
+                    <div className="p-3">
+                      <p>Av. de San Jorge Etorbidea 2,</p>
+                      <p>31012 Pamplona/Iruña</p>
+                      <p>Navarra/Nafarroa</p>
+                    </div>
+                  </div>
                 </li>
                 <li>
-                  <h3 className="icon fa-mobile">
-                    <span className="label">Tlf.:</span>
-                  </h3>
-                  948 12 41 29
+                  <div className="contact">
+                    <h3 className="icon fa fa-mobile fa-2x">
+                      <span className="label">Tlf.:</span>
+                    </h3>
+                    <p className="p-3">948 12 41 29</p>
+                  </div>
                 </li>
                 <li>
-                  <h3 className="icon fa-envelope-o">
-                    <span className="label">Email</span>
-                  </h3>
-                  <a href="#">nau_frago@cuatrovientos.org</a>
+                  <div className="contact">
+                    <h3 className="icon fa fa-envelope-o fa-2x">
+                      <span className="label">Email</span>
+                    </h3>
+                    <a className="p-3" href="#">
+                      nau_frago@cuatrovientos.org
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>

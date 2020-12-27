@@ -14,7 +14,7 @@ function showApplication(application) {
   return (
     <li>
       <a href={application} className="button fit">
-        Aplikazioa Androiderako
+        Android APK
       </a>
     </li>
   )
@@ -44,10 +44,10 @@ const ProjectItem = ({
   return (
     <article key={id} className="work-item">
       <div className="row">
-        <h1 className="12u">{title}</h1>
+        <h1 className="col-12">{title}</h1>
       </div>
       <div className="row">
-        <div className="5u 12u$(small)">
+        <div className="col-md-5 col-12">
           {thumbnail ? showImage(thumbnail) : null}
           <ul className="actions">
             {documentation ? showDocumentation(documentation) : null}
@@ -55,7 +55,7 @@ const ProjectItem = ({
             {application ? showApplication(application) : null}
           </ul>
         </div>
-        <div className="7u  12u$(small)">
+        <div className="col-md-7  col-12">
           <div dangerouslySetInnerHTML={{ __html: description }} />
         </div>
       </div>

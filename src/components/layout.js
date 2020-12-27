@@ -6,7 +6,7 @@ import Header from './Header'
 const Template = ({ children }) => (
  <div className="container-fluid">
     <div className="row">
-      <div className="col-lg-4">
+      <div className="col-lg-4 p-0">
         <Header />
       </div>
       <div className="col col-lg-8">

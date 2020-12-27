@@ -30,9 +30,14 @@
     }
     h1 {
         color: $accent2;
-        font-size: 1.75em;
-        line-height: 1.75em;
-        margin: 0;
+        @include media-breakpoint-up(lg) { 
+            font-size: 1.75em;
+            line-height: 1.75em;
+         }
+         @include media-breakpoint-down(lg) { 
+            font-size: 1.2em;
+            line-height: 1em;
+         }
     }
     a {
        text-decoration: none;
